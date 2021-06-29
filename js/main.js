@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
 else {
   console.log("Service worker no soportado.");
 }
-
+});
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
   let main = document.querySelector('.section-notifications').classList.add('offline');
@@ -29,4 +29,3 @@ window.addEventListener('online', event => {
 if (!navigator.onLine) {
   document.querySelector('.section-notifications').classList.add('offline');
 }
-});
